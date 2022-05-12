@@ -18,7 +18,6 @@
 html, body {
     min-height: 100vh;
     background-color: #494845;
-    font-family: ;
 }
 
 header {
@@ -27,6 +26,8 @@ header {
     text-align: center;
 }
 header h1 {
+    max-width: 500px;
+    display: inline-block;
     font-size: 5em;
      padding-top: 50px;
     font-variant: unset;
@@ -35,7 +36,6 @@ header h1 {
 header p {
     font-size: 2em;
     padding-bottom: 50px;
-    padding-top: 10px;
     
 }
 a {
@@ -54,6 +54,11 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+
+}
+
+section > p {
+    padding-bottom: 1em;
 }
 
 section.normal {
@@ -62,14 +67,29 @@ section.normal {
 }
 section.image {
     background-color: #68645dbd;
+    box-shadow: inset 0px 6px 20px #000000b0;
     color: #fff;
+    background-attachment: fixed;
 }
 
 section.image > p {
     padding: 5px;
     display: inline-block;
     background-color: #00000060;
-    width: 400px;
+    background-attachment: local;
+}
+
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-position: left center;
+    background-size: cover;
+    
 }
 
 footer {
